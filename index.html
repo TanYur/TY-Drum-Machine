@@ -1,38 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <link rel="shortcut icon" href="#">
   <link rel="stylesheet" href="style.css/style.css">
-  <title>Java Script Calculator</title>
+  <title>Drum Machine</title>
 </head>
+
 <body>
-  <div class="container scene">
-    <div class="calculator"  id="quote-box">
-        <div id="display">0</div>
-        <div class="elementsBtn" id="elementsBtn">
-          <div class="btn" id="clear">AC</div>
-          <div class="btn sign" id="divide">/</div>
-          <div class="btn sign" id="multiply">x</div>
-          <div class="btn number" id="seven">7</div>
-          <div class="btn number" id="eight">8</div>
-          <div class="btn number" id="nine">9</div>
-          <div class="btn sign" id="subtract">-</div>
-          <div class="btn number" id="four">4</div>
-          <div class="btn number" id="five">5</div>
-          <div class="btn number" id="six">6</div>
-          <div class="btn sign" id="add">+</div>
-          <div class="btn number" id="one">1</div>
-          <div class="btn number" id="two">2</div>
-          <div class="btn number" id="three">3</div>
-          <div class="btn" id="equals">=</div>
-          <div class="btn number" id="zero">0</div>
-          <div class="btn" id="decimal">.</div>
-        </div>
+  <div class="container" id="drum-machine">
+    <div class="display-wraper">
+      <div class="btn">
+        <button class='switch' id="on">on</button>
+        <button class='switch hideSwitch' id="off">off</button>
       </div>
+      <div class="display" id="display"></div>
+      <div>
+        <div class="vol" id="volume">volume 0</div>
+        <button class="vol" id="plus">+</button>
+        <button class="vol" id="sub">-</button> 
       </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="./script/script.js"></script>
+    </div>
+  
+  
+    <div class="wraper">
+  
+      <button class="drum-pad drum-pad-hover" id="soundsq">Q
+        <audio class="clip" id="Q" src="https://www.pacdv.com/sounds/interface_sound_effects/sound1.mp3"
+          preload="auto" volume = '0.2'></audio>
+      </button>
+  
+      <button class="drum-pad" id="soundsw">W
+        <audio class="clip" id="W" src="https://www.pacdv.com/sounds/interface_sound_effects/sound51.wav"
+          preload="auto"></audio>
+      </button>
+  
+      <button class="drum-pad" id="soundse">E
+        <audio class="clip" id="E" src="https://www.pacdv.com/sounds/miscellaneous_sounds/magic-wand-1.wav"
+          preload="auto"></audio>
+      </button>
+  
+      <button class="drum-pad" id="soundsa">A
+        <audio class="clip" id="A" src="https://www.pacdv.com/sounds/miscellaneous_sounds/striking-a-match-1.wav"
+          preload="auto"></audio>
+      </button>
+  
+      <button class="drum-pad" id="soundss">S
+        <audio class="clip" id="S" src="https://www.pacdv.com/sounds/miscellaneous_sounds/velcro-strap-1.wav"
+          preload="auto"></audio>
+      </button>
+  
+      <button class="drum-pad" id="soundsd">D
+        <audio class="clip" id="D" src="https://www.pacdv.com/sounds/domestic_sound_effects/can-open-1.wav"
+          preload="auto"></audio>
+      </button>
+  
+      <button class="drum-pad" id="soundsz">Z
+        <audio class="clip" id="Z" src="https://www.pacdv.com/sounds/domestic_sound_effects/can-open-2.wav"
+          preload="auto"></audio>
+      </button>
+  
+      <button class="drum-pad" id="soundsx">X
+        <audio class="clip" id="X" src="https://www.pacdv.com/sounds/domestic_sound_effects/can-to-table-2.wav"
+          preload="auto"></audio>
+      </button>
+  
+      <button class="drum-pad" id="soundsc">C
+        <audio class="clip" id="C" src="https://www.pacdv.com/sounds/domestic_sound_effects/floor-squeak-2.wav"
+          preload="auto"></audio>
+      </button>
+  
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
+  <script src="./script/script.js"></script>
 </body>
+
 </html>
